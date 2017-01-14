@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	bot, err := tgbotapi.NewBotAPI("318149659:AAHaM5VuYYoMgjQM7rCDD8L42JbxK254b6o")
+	bot, err := tgbotapi.NewBotAPI("*YOUR-BOT-TOKEN*")
 	if err != nil {
 		log.Panic(err)
 	}
@@ -23,7 +23,7 @@ func main() {
 	u.Timeout = 60
 
 	updates, err := bot.GetUpdatesChan(u)
-	rangkumAPI := "http://rangkum.herokuapp.com/rangkum318149659:AAHaM5VuYYoMgjQM7rCDD8L42JbxK254b6o"
+	rangkumAPI := "http://rangkum.herokuapp.com/rangkum"
 	for update := range updates {
 		if update.Message == nil {
 			continue

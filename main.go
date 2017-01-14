@@ -51,7 +51,7 @@ func main() {
 			body, err := ioutil.ReadAll(resp.Body)
 			reply = string(body)
 			if strings.HasPrefix(reply, "<!DOCTYPE HTML PUBLIC "){
-				reply = "url invalid"
+				reply = "your url is invalid :)"
 			}
 		} else {
 			reply = "You can type \n/rangkum [url]\n/about"

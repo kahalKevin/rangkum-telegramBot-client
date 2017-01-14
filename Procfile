@@ -1,1 +1,1 @@
-web: go-getting-started
+worker: $GOBIN/go-getting-started
